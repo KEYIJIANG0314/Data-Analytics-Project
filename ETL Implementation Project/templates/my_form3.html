@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>work project</title>
+    <style>
+        .input-column-left {
+            float: left;
+            width: 10%;
+            background-color: #FFD700;
+            padding: 10px;
+        }
+        .input-column-right {
+            float: left;
+            width: 10%;
+            background-color: #FFD700;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="container" style="width:100%">
+
+    <div id="header" style="background-color:#FFA500;">
+        <h1 style="margin-bottom:0;">Enter some text to search:</h1></div>
+    <h2>The following fields stand for: Borough, Patrol Borough(North or South), NYPD Precinct ID, Call Created date, and key word of incident type.</h2>
+    <h2>You can input the first two fields to look for the NYPD Precincts in searched areas.</h2>
+    <h2>Then you can input the last three fields to look for specific incident details.</h2>
+    <h2>Please clear before input new, you must input either the first field or the third field.</h2>
+    <form action="." method="POST">
+        <div class="input-column-left">
+            Borough<br><input type="text" name="userinput1"><br>
+            Patrol Borough<br><input type="text" name="userinput2"><br>
+            
+        </div>
+        <div class="input-column-right">
+			NYPD Precinct ID<br><input type="text" name="userinput3"><br>
+            Call Created Date<br><input type="text" name="userinput4"><br>
+            Incident Key Word<br><input type="text" name="userinput5"><br>
+        </div>
+        <div style="clear:both;">
+            <input type="submit" name="my-form" value="Send">
+        </div>
+    </form>
+
+    <div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+        Jasmine(Keyi) Jiang, Jiajun Ma, Heyou Pan, Haonan Yao, Tianren Xie</div>
+</div>
+</body>
+</html>
